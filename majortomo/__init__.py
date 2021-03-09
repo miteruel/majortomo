@@ -15,4 +15,5 @@
 from .client import Client
 from .worker import Worker, WorkerRequestsIterator
 
+__version__ = '0.2.0'
 __all__ = ['Client', 'Worker', 'WorkerRequestsIterator']

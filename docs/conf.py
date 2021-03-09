@@ -11,6 +11,11 @@
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
+import os
+import sys
+sys.path.insert(0, os.path.abspath('..'))
+
+import majortomo
 
 # -- Project information -----------------------------------------------------
 
@@ -19,9 +24,9 @@ copyright = '2021, Shoppimon LTD'
 author = 'Shahar Evron'
 
 # The short X.Y version
-version = '0.1'
+version = '.'.join(majortomo.__version__.split('.')[0:2])
 # The full version, including alpha/beta/rc tags
-release = '0.1.0'
+release = majortomo.__version__
 
 
 # -- General configuration ---------------------------------------------------
