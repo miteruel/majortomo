@@ -19,9 +19,12 @@ import majortomo
 with open('README.md') as f:
     long_desc = f.read()
 
+with open('VERSION') as f:
+    version = f.read().strip()
+
 setup(
     name='majortomo',
-    version=majortomo.__version__,
+    version=version,
     description='Majortomo - ZMQ MDP 0.2 (Majordomo) Python Implementation',
     author='Shahar Evron',
     author_email='shahar@shoppimon.com',

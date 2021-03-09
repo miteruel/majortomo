@@ -6,16 +6,7 @@
 # full list see the documentation:
 # http://www.sphinx-doc.org/en/master/config
 
-# -- Path setup --------------------------------------------------------------
-
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
 import os
-import sys
-sys.path.insert(0, os.path.abspath('..'))
-
-from majortomo._version import __version__ as majortomo_version
 
 # -- Project information -----------------------------------------------------
 
@@ -23,11 +14,12 @@ project = 'majortomo'
 copyright = '2021, Shoppimon LTD'
 author = 'Shahar Evron'
 
-# The short X.Y version
-version = '.'.join(majortomo_version.split('.')[0:2])
-# The full version, including alpha/beta/rc tags
-release = majortomo_version
+with open(os.path.join(os.path.abspath('..'), 'VERSION')) as f:
+    # The full version, including alpha/beta/rc tags
+    release = f.read().strip()
 
+# The short X.Y version
+version = '.'.join(release.split('.')[0:2])
 
 # -- General configuration ---------------------------------------------------
 
