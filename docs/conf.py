@@ -6,28 +6,20 @@
 # full list see the documentation:
 # http://www.sphinx-doc.org/en/master/config
 
-# -- Path setup --------------------------------------------------------------
-
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
-#
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
-
+import os
 
 # -- Project information -----------------------------------------------------
 
 project = 'majortomo'
-copyright = '2018, Shoppimon LTD'
+copyright = '2021, Shoppimon LTD'
 author = 'Shahar Evron'
 
-# The short X.Y version
-version = '0.1'
-# The full version, including alpha/beta/rc tags
-release = '0.1.0'
+with open(os.path.join(os.path.abspath('..'), 'VERSION')) as f:
+    # The full version, including alpha/beta/rc tags
+    release = f.read().strip()
 
+# The short X.Y version
+version = '.'.join(release.split('.')[0:2])
 
 # -- General configuration ---------------------------------------------------
 
@@ -80,7 +72,7 @@ pygments_style = None
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'press'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the

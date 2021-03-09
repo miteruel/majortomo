@@ -4,6 +4,9 @@
 #
 #    pip-compile --no-emit-index-url --output-file=requirements.txt requirements.in
 #
-figcan==0.0.4             # via -r requirements.in
-pyyaml==5.1               # via -r requirements.in
-pyzmq==17.1.2             # via -r requirements.in
+figcan==0.0.4
+    # via -r requirements.in
+pyyaml==5.4.1
+    # via -r requirements.in
+pyzmq==21.0.2
+    # via -r requirements.in

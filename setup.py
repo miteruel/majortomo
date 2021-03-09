@@ -14,11 +14,13 @@
 
 from setuptools import find_packages, setup
 
-with open('VERSION') as f:
-    version = f.read()
+import majortomo
 
 with open('README.md') as f:
     long_desc = f.read()
+
+with open('VERSION') as f:
+    version = f.read().strip()
 
 setup(
     name='majortomo',
@@ -35,9 +37,8 @@ setup(
         "figcan",
         "pyyaml",
         "pyzmq",
-        "typing; python_version < '3.0'"
     ],
-    python_requires='>=2.7.12,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*',
+    python_requires='>=3.6.0',
     test_require=[
         'pytest',
     ],

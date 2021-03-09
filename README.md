@@ -2,8 +2,8 @@ Majortomo
 =========
 *Majortomo* is a pure-Python [ZeroMQ MDP 0.2](https://rfc.zeromq.org/spec:18/MDP/)
 ("Majordomo") implementation. It provides a ready-to-use MDP Service Broker,
-as well as a Python 2.7 / 3.5+ library for implementing MDP clients and workers
-with just a few lines of code. 
+as well as a Python library for implementing MDP clients and workers with just a 
+few lines of code. 
 
 MDP / Majordomo is a protocol for implementing a highly scalable, lightweight 
 service oriented messaging on top of [ZeroMQ](https://zeromq.org). It is very 
@@ -16,6 +16,11 @@ micro-services in a scalable, robust and fault-tolerant manner.
 
 Installation
 ------------
+**NOTE**: Since version 0.2, Majortomo no longer supports Python versions lower
+than 3.6 including Python 2.7. If you need to use older Python versions, pin your
+Majortomo installation to version 0.1.x but note that no fixes will be released 
+for these versions. 
+
 The simplest way to install Majortomo is via `pip`:
 
     $ pip install majortomo

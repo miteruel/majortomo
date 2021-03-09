@@ -1,6 +1,6 @@
 # Docker file for Majortomo ZeroMQ MDP Broker
 
-FROM python:3.7
+FROM python:3.8
 
 ARG DEBIAN_FRONTEND=noninteractive
 

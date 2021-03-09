@@ -1,8 +1,5 @@
 pip-tools==5.*
-pytest==4.*
+pytest==5.*
 pytest-flake8==1.*
 pytest-isort==1.*
-pytest-mypy==0.*; python_version >= '3.4'
-sphinx==1.8.*
-jinja2>=2.10.1  # needed by Sphinx
-sphinx-autodoc-typehints==1.6.*
+pytest-mypy==0.*
