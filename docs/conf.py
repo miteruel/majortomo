@@ -15,7 +15,7 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('..'))
 
-import majortomo
+from majortomo._version import __version__ as majortomo_version
 
 # -- Project information -----------------------------------------------------
 
@@ -24,9 +24,9 @@ copyright = '2021, Shoppimon LTD'
 author = 'Shahar Evron'
 
 # The short X.Y version
-version = '.'.join(majortomo.__version__.split('.')[0:2])
+version = '.'.join(majortomo_version.split('.')[0:2])
 # The full version, including alpha/beta/rc tags
-release = majortomo.__version__
+release = majortomo_version
 
 
 # -- General configuration ---------------------------------------------------

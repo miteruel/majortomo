@@ -11,9 +11,8 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
+from ._version import __version__
 from .client import Client
 from .worker import Worker, WorkerRequestsIterator
 
-__version__ = '0.2.0'
 __all__ = ['Client', 'Worker', 'WorkerRequestsIterator']
