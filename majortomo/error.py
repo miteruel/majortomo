@@ -40,7 +40,7 @@ class StateError(Error):
     pass
 
 
-class Timeout(Error):
+class Timeout(Error, TimeoutError):
     """Operation timed out
     """
     pass
